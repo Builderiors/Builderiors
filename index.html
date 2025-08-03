@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUILDERIORS - Professional Home & Office Interiors</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            transition: all 0.3s;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: #FFF;
+        }
+        .whatsapp-float i {
+            margin-top: 16px;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .section-spacing {
+            padding: 4rem 0;
+        }
+        @media (max-width: 640px) {
+            .section-spacing {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919326777296?text=Hi! I'm interested in interior design services" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-gray-800">
+                    <i class="fas fa-home text-blue-600 mr-2"></i>
+                    BUILDERIORS
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <div class="flex items-center text-gray-700">
+                        <i class="fas fa-phone text-blue-600 mr-2"></i>
+                        <a href="tel:+919326777296" class="hover:text-blue-600">+91 93267 77296</a>
+                    </div>
+                    <div class="flex items-center text-gray-700">
+                        <i class="fas fa-envelope text-blue-600 mr-2"></i>
+                        <a href="mailto:builderiors@outlook.com" class="hover:text-blue-600">builderiors@outlook.com</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button onclick="toggleMobileMenu()" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-3 space-y-3">
+                <a href="tel:+919326777296" class="flex items-center text-gray-700">
+                    <i class="fas fa-phone text-blue-600 mr-2"></i>
+                    +91 93267 77296
+                </a>
+                <a href="mailto:builderiors@outlook.com" class="flex items-center text-gray-700">
+                    <i class="fas fa-envelope text-blue-600 mr-2"></i>
+                    builderiors@outlook.com
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white section-spacing">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Transform Your Space NOW!!</h1>
+            <p class="text-xl md:text-2x1 mb-8 opacity-90">We think for you that's why we make you to Pay less and take More</p>
+            <p class="text-lg mb-8 max-w-3xl mx-auto">No office visits needed! Get instant estimates, expert consultation, and professional design services delivered to your doorstep.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/919326777296?text=Hi! I want a free consultation" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i>Free Consultation
+                </a>
+                <a href="#calculator" class="bg-white hover:bg-gray-100 text-gray-800 px-8 py-3 rounded-lg text-lg font-semibold transition duration-300">
+                    <i class="fas fa-calculator mr-2"></i>Get Estimate
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-spacing bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center card-hover bg-gray-50 p-6 rounded-lg">
+                    <div class="text-5xl text-blue-600 mb-4">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Residential Design</h3>
+                    <p class="text-gray-600">Complete home interiors for 1BHK to 4BHK apartments and independent houses in Mumbai</p>
+                </div>
+                <div class="text-center card-hover bg-gray-50 p-6 rounded-lg">
+                    <div class="text-5xl text-blue-600 mb-4">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Office Design</h3>
+                    <p class="text-gray-600">Modern office spaces, co-working areas, and commercial interior solutions</p>
+                </div>
+                <div class="text-center card-hover bg-gray-50 p-6 rounded-lg">
+                    <div class="text-5xl text-blue-600 mb-4">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Renovation</h3>
+                    <p class="text-gray-600">Complete makeovers, modular kitchen, bathroom renovation, and space optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Calculator Section -->
+    <section id="calculator" class="section-spacing bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Instant Cost Estimation</h2>
+            <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-8">
+                <form id="costCalculator" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Property Type</label>
+                            <select id="propertyType" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="">Select Property Type</option>
+                                <option value="1bhk">1 BHK</option>
+                                <option value="2bhk">2 BHK</option>
+                                <option value="3bhk">3 BHK</option>
+                                <option value="4bhk">4+ BHK</option>
+                                <option value="office">Office Space</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Carpet Area (sq ft)</label>
+                            <input type="number" id="area" placeholder="Enter area in sq ft" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">Service Type</label>
+                        <select id="serviceType" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="">Select Service</option>
+                            <option value="basic">Basic Interior (₹1,200/sq ft)</option>
+                            <option value="premium">Premium Interior (₹1,800/sq ft)</option>
+                            <option value="luxury">Luxury Interior (₹2,500/sq ft)</option>
+                            <option value="renovation">Renovation (₹800/sq ft)</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-3">Additional Services</label>
+                        <div class="grid md:grid-cols-2 gap-3">
+                            <label class="flex items-center">
+                                <input type="checkbox" id="modularKitchen" class="mr-2">
+                                <span>Modular Kitchen (+₹150/sq ft)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="wardrobes" class="mr-2">
+                                <span>Built-in Wardrobes (+₹200/sq ft)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="falseCeiling" class="mr-2">
+                                <span>False Ceiling (+₹100/sq ft)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="lighting" class="mr-2">
+                                <span>Premium Lighting (+₹80/sq ft)</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="button" onclick="calculateCost()" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg text-lg font-semibold transition duration-300">
+                        Calculate Estimate
+                    </button>
+                </form>
+                
+                <div id="result" class="hidden mt-6 p-6 bg-green-50 border border-green-200 rounded-lg">
+                    <h3 class="text-xl font-semibold text-green-800 mb-3">Estimated Cost</h3>
+                    <div id="costBreakdown" class="space-y-2 text-gray-700"></div>
+                    <div class="mt-4 pt-4 border-t border-green-200">
+                        <p class="text-2xl font-bold text-green-800" id="totalCost"></p>
+                        <p class="text-sm text-gray-600 mt-2">*This is an approximate estimate. Final cost may vary based on materials,location and specific requirements.</p>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <a href="https://wa.me/919326777296?text=Hi! I got an estimate from your website. I'd like to discuss my project details." target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold inline-block transition duration-300">
+                            <i class="fab fa-whatsapp mr-2"></i>Discuss with Expert
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section-spacing bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Meet Our Team</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center card-hover">
+                    <div class="w-32 h-32 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">SD. Sharma</h3>
+                    <p class="text-blue-600 font-medium mb-2">Lead Project Officer</p>
+                    <p class="text-gray-600 text-sm">Your go-to for ideas, updates & smooth coordination</p>
+                </div>
+                <div class="text-center card-hover">
+                    <div class="w-32 h-32 bg-green-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Priya Shah</h3>
+                    <p class="text-blue-600 font-medium mb-2">3D Visualization Expert</p>
+                    <p class="text-gray-600 text-sm">Creates realistic 3D renders and design concepts</p>
+                </div>
+                <div class="text-center card-hover">
+                    <div class="w-32 h-32 bg-green-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Rahul</h3>
+                    <p class="text-blue-600 font-medium mb-2">Vendor Management</p>
+                    <p class="text-gray-600 text-sm">Handle vendors and contarctors till end of the project</p>
+                </div>
+                <div class="text-center card-hover">
+                    <div class="w-32 h-32 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Amit Patel</h3>
+                    <p class="text-blue-600 font-medium mb-2">Cost Estimator & Lead</p>
+                    <p class="text-gray-600 text-sm">Cost estimator and billing processor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section-spacing bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Our Work Portfolio</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-home text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Modern 2BHK Apartment</h3>
+                        <p class="text-gray-600 mb-4">Bhandup West, Mumbai</p>
+                        <a href="https://wa.me/919326777296?text=I'd like to see the Modern 2BHK Apartment project photos" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">
+                            <i class="fab fa-whatsapp mr-2"></i>View on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-building text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Corporate Office Design</h3>
+                        <p class="text-gray-600 mb-4">Thane Wagle Estate, Mumbai</p>
+                        <a href="https://wa.me/919326777296?text=I'd like to see the Corporate Office Design project photos" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">
+                            <i class="fab fa-whatsapp mr-2"></i>View on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-utensils text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Luxury Kitchen Makeover</h3>
+                        <p class="text-gray-600 mb-4">Andheri West, Mumbai</p>
+                        <a href="https://wa.me/919326777296?text=I'd like to see the Luxury Kitchen Makeover project photos" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">
+                            <i class="fab fa-whatsapp mr-2"></i>View on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="https://wa.me/919326777296?text=I'd like to see your complete portfolio and past work examples" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i>View Complete Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section-spacing bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Why Choose BUILDERIORS?</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-5xl text-blue-600 mb-4">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">No Office Visits</h3>
+                    <p class="text-gray-600 text-sm">Save your time and energy. We come to your location for consultation and measurements.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl text-green-600 mb-4">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Instant Support</h3>
+                    <p class="text-gray-600 text-sm">Direct WhatsApp and phone support. Get answers to your questions immediately.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl text-purple-600 mb-4">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Complete Transparency</h3>
+                    <p class="text-gray-600 text-sm">No hidden costs. Clear pricing, detailed estimates, and regular project updates.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl text-orange-600 mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Mumbai Experts</h3>
+                    <p class="text-gray-600 text-sm">Local team with deep understanding of Mumbai housing and design preferences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-spacing gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Space?</h2>
+            <p class="text-xl mb-8 opacity-90">Get started with a free consultation today!</p>
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-phone text-3xl mb-3"></i>
+                    <h3 class="text-lg font-semibold mb-2">Call Us</h3>
+                    <a href="tel:+919326777296" class="text-lg hover:underline">+91 93267 77296</a>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-whatsapp text-3xl mb-3"></i>
+                    <h3 class="text-lg font-semibold mb-2">WhatsApp</h3>
+                    <a href="https://wa.me/919326777296" target="_blank" class="text-lg hover:underline">Chat Now</a>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-envelope text-3xl mb-3"></i>
+                    <h3 class="text-lg font-semibold mb-2">Email</h3>
+                    <a href="mailto:builderiors@outlook.com" class="text-lg hover:underline">builderiors@outlook.com.com</a>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/919326777296?text=Hi! I want to schedule a free home visit consultation" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i>Schedule Free Visit
+                </a>
+                <a href="tel:+919326777296" class="bg-white hover:bg-gray-100 text-gray-800 px-8 py-3 rounded-lg text-lg font-semibold transition duration-300">
+                    <i class="fas fa-phone mr-2"></i>Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">BUILDERIORS</h3>
+                    <p class="text-gray-300">Professional interior design services across Mumbai. No office visits required - we come to you!</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#calculator" class="hover:text-white">Cost Calculator</a></li>
+                        <li><a href="https://wa.me/919326777296" target="_blank" class="hover:text-white">WhatsApp</a></li>
+                        <li><a href="tel:+919326777296" class="hover:text-white">Call Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Service Areas</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Ghatkoper • Andheri • Powai</li>
+                        <li>CST • Lower Parel • Thane</li>
+                        <li>Kalyan• Dombivali • Badlapur</li>
+                        <li>Kharghar • Navi Mumbai</li>
+                        <li>All Mumbai & Suburbs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 BUILDERIORS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        function calculateCost() {
+            const propertyType = document.getElementById('propertyType').value;
+            const area = parseFloat(document.getElementById('area').value);
+            const serviceType = document.getElementById('serviceType').value;
+            
+            if (!propertyType || !area || !serviceType) {
+                alert('Please fill in all required fields');
+                return;
+            }
+
+            let baseRate = 0;
+            let serviceName = '';
+            
+            switch(serviceType) {
+                case 'basic':
+                    baseRate = 1200;
+                    serviceName = 'Basic Interior';
+                    break;
+                case 'premium':
+                    baseRate = 1800;
+                    serviceName = 'Premium Interior';
+                    break;
+                case 'luxury':
+                    baseRate = 2500;
+                    serviceName = 'Luxury Interior';
+                    break;
+                case 'renovation':
+                    baseRate = 800;
+                    serviceName = 'Renovation';
+                    break;
+            }
+
+            let baseCost = area * baseRate;
+            let additionalCost = 0;
+            let breakdown = [`${serviceName}: ₹${baseRate}/sq ft × ${area} sq ft = ₹${baseCost.toLocaleString()}`];
+
+            // Calculate additional services
+            if (document.getElementById('modularKitchen').checked) {
+                const kitchenCost = area * 150;
+                additionalCost += kitchenCost;
+                breakdown.push(`Modular Kitchen: ₹${kitchenCost.toLocaleString()}`);
+            }
+            
+            if (document.getElementById('wardrobes').checked) {
+                const wardrobeCost = area * 200;
+                additionalCost += wardrobeCost;
+                breakdown.push(`Built-in Wardrobes: ₹${wardrobeCost.toLocaleString()}`);
+            }
+            
+            if (document.getElementById('falseCeiling').checked) {
+                const ceilingCost = area * 100;
+                additionalCost += ceilingCost;
+                breakdown.push(`False Ceiling: ₹${ceilingCost.toLocaleString()}`);
+            }
+            
+            if (document.getElementById('lighting').checked) {
+                const lightingCost = area * 80;
+                additionalCost += lightingCost;
+                breakdown.push(`Premium Lighting: ₹${lightingCost.toLocaleString()}`);
+            }
+
+            const totalCost = baseCost + additionalCost;
+
+            // Display results
+            document.getElementById('costBreakdown').innerHTML = breakdown.map(item => `<div>• ${item}</div>`).join('');
+            document.getElementById('totalCost').textContent = `Total Estimated Cost: ₹${totalCost.toLocaleString()}`;
+            document.getElementById('result').classList.remove('hidden');
+            
+            // Scroll to result
+            document.getElementById('result').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
